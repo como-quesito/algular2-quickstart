@@ -1,12 +1,7 @@
 import {Component, bootstrap,CORE_DIRECTIVES,FORM_DIRECTIVES} from 'angular2/angular2';
 @Component({
     selector: 'my-app',
-    template: `
-    <h3>Mi primer aplicacioncita de {{nombre}} edad {{raton.edad}} email {{raton.email}}</h3>
-    <p>Esta es un template multilinea</p>
-   <p> no lo puedo creer</p>
-   <input [(ng-model)]="raton.edad"  placeholder="edad">
-    `,
+    templateUrl: 'plantilla1.html',
     directives: [CORE_DIRECTIVES, FORM_DIRECTIVES]
 
 

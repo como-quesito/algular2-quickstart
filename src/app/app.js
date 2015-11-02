@@ -21,7 +21,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app',
-            template: "\n    <h3>Mi primer aplicacioncita de {{nombre}} edad {{raton.edad}} email {{raton.email}}</h3>\n    <p>Esta es un template multilinea</p>\n   <p> no lo puedo creer</p>\n   <input [(ng-model)]=\"raton.edad\"  placeholder=\"edad\">\n    ",
+            templateUrl: 'plantilla1.html',
             directives: [angular2_1.CORE_DIRECTIVES, angular2_1.FORM_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
