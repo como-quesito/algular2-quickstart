@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  //el siguiente atributo de script es MUY IMPORTTANTE
+  //QUE LO MODIFIQUES COMO SE MUESTRA A CONTINUACIÓN, SI NO
+  //NO TE COMPILARA NADA, PUES NO RECONOCERA EL TSC
   "scripts": {
     "tsc": "tsc -p src -w",
     "start": "live-server --open=src"
