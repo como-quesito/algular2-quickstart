@@ -12,15 +12,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var angular2_1 = require('angular2/angular2');
 var AppComponent = (function () {
     function AppComponent() {
+        this.nombre = "Juan Carlitos";
+        this.raton = {
+            edad: 45,
+            email: 'rapidclimate@gmail.com'
+        };
     }
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: "\n    <h3>Mi primer aplicacioncita de {{nombre}} edad {{raton.edad}} email {{raton.email}}</h3>\n    <p>Esta es un template multilinea</p>\n   <p> no lo puedo creer</p>\n   <input [(ng-model)]=\"raton.edad\"  placeholder=\"edad\">\n    ",
+            directives: [angular2_1.CORE_DIRECTIVES, angular2_1.FORM_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 })();
+var Raton = (function () {
+    function Raton() {
+    }
+    return Raton;
+})();
 angular2_1.bootstrap(AppComponent);
+//ESto es comentario y no tiene ningun efecto
 //# sourceMappingURL=app.js.map
